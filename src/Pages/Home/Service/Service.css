@@ -1,0 +1,10 @@
+.service{
+    border-radius: 20px;
+}
+
+.service img{
+    height: 300px;
+    width: 300px;
+    border-radius: 5px;
+
+}
