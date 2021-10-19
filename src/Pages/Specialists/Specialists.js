@@ -15,7 +15,7 @@ const Specialists = () => {
 
     return (
         <div id="specialists" className="bg-light">
-            <h2 className="p-5">Meet Our Specialist</h2>
+            <h2 className="pt-5">Meet Our Specialist</h2>
             <div className="specialist-container">
                 {
                     specialists.map(specialist => <Specialist

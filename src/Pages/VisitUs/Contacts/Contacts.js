@@ -14,7 +14,7 @@ const Contacts = () => {
 
     return (
         <div className="contacts-container">
-            <h1 className="mt-5 header-text">Get in touch with us</h1> 
+            <h1 className="mt-5 header-text">Visit Us</h1> 
             <div className="contact-container">
                 {
                     contacts.map(contact => <Contact

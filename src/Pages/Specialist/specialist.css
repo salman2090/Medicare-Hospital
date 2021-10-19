@@ -5,15 +5,3 @@
     margin-top: 50px;
     border-radius: 20px;
 }
-
-@media only screen and (max-width:688px) {
-    .specialists-container{
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-
-@media only screen and (min-width:689px) and (max-width:991px) {
-    .specialists-container{
-        grid-template-columns: repeat(2, 1fr);
-    }
-}

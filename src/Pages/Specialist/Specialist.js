@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, CardGroup } from 'react-bootstrap';
-import './specialist.css';
+import './Specialist.css';
 
 const Specialist = ({specialist}) => {
     

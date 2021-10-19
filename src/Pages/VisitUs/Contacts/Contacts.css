@@ -7,7 +7,7 @@
 .header-text{
     border: 3px solid whitesmoke;
     align-items: center;
-    width: 500px;
+    width: 280px;
     margin: auto;
     text-align: center;
     padding: 10px;
@@ -16,7 +16,20 @@
 }
 .contact-container{
     border-right: 1px solid maroon;
-    margin-right: 5px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+}
+
+/* Make it Responsive*/
+
+@media only screen and (max-width:688px) {
+    .contact-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (min-width:689px) and (max-width:991px) {
+    .contact-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
