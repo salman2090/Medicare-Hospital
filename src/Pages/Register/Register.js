@@ -1,23 +1,20 @@
-import React from 'react';
+
 import { Button, Col, Form, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import useAuth from '../../../hooks/useAuth';
-import './Login.css';
+import './Register.css';
 
-const Login = () => {
+const Register = () => {
 
-    const {signInUsingGoogle} = useAuth();
-    
     return (
-        <div>
-            <h2 className="mt-5">Please Login</h2>
+        <div className="register-form">
+            <h2 className="mt-5 mb-3">Create Account</h2>
             <Form>
                 <Form.Group as={Row} className="login-form mb-3 w-50" controlId="formPlaintextPassword">
                     <Form.Label column sm="2">
                     Email
                     </Form.Label>
                     <Col sm="10">
-                    <Form.Control type="email" placeholder="Email" />
+                    <Form.Control  type="email" placeholder="Email" />
                     </Col>
                 </Form.Group>
 
@@ -29,15 +26,20 @@ const Login = () => {
                     <Form.Control type="password" placeholder="Password" />
                     </Col>
                 </Form.Group>
-                <Button className="mb-3" variant="primary outline-dark" value="submit">Submit</Button>{' '}
-            </Form>
-            <p>New to MediCare Hospital? <Link to="/register">Create Account</Link></p>
 
-            
-            <h5 className="mt-5">Click on the beneath button for Google Sign In</h5>
-            <button onClick={signInUsingGoogle} className="btn btn-warning login-form mt-3 mb-5">Google Sign In</button>
+                <Form.Group as={Row} className="login-form mb-3 w-50" controlId="formPlaintextPassword">
+                    <Form.Label column sm="2">
+                    Re-enter-Password
+                    </Form.Label>
+                    <Col sm="10">
+                    <Form.Control type="password" placeholder="Password" />
+                    </Col>
+                </Form.Group>
+            </Form>
+            <Button className="mb-3" variant="primary outline-dark" value="submit">Submit</Button>{' '}
+            <p>Already Have an Account? <Link to="login">Login</Link></p>
         </div>
     );
 };
 
-export default Login;
+export default Register;

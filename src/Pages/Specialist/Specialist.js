@@ -3,12 +3,12 @@ import { Card, CardGroup } from 'react-bootstrap';
 import './specialist.css';
 
 const Specialist = ({specialist}) => {
-    const {id, name, img, speciality, degree} = specialist;
+    
+    const { name, img, speciality, degree} = specialist;
     return (
-        <div>
-
+        <div className="specialists-container">
             <CardGroup >
-            <Card className="specialist m-5 mt-5 shadow p-3 mb-5 bg-body rounded ">
+            <Card className=" specialist  m-5 mt-5 shadow p-3 mb-5 bg-body rounded ">
             <Card.Img variant="top" src={img} />
                 <Card.Body>
                    <h2>{name}</h2>

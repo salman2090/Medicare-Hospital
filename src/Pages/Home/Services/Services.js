@@ -6,6 +6,7 @@ const Services = () => {
 
     const [services, setServices] = useState([]);
 
+    // load data
     useEffect(() => {
         fetch('./services.json')
             .then(res => res.json())
@@ -13,12 +14,12 @@ const Services = () => {
     })
 
     return (
-        <div>
-            <h2>Our Services</h2>
+        <div id="services">
+            <h2 className="fw-bold">Checkout Our Services</h2>
             <div className="service-container">
                 {
                     services.map(service => <Service
-                        key={services.id}
+                        key={services.key}
                         service={service}
                     ></Service>)
                 }

@@ -6,6 +6,7 @@ const Specialists = () => {
 
     const [specialists, setSpecialists] = useState([]);
 
+    //load data
     useEffect(() => {
         fetch('./specialists.json')
             .then(res => res.json())
@@ -13,8 +14,8 @@ const Specialists = () => {
     })
 
     return (
-        <div>
-            <h2>Our Specialist</h2>
+        <div id="specialists" className="bg-light">
+            <h2 className="p-5">Meet Our Specialist</h2>
             <div className="specialist-container">
                 {
                     specialists.map(specialist => <Specialist

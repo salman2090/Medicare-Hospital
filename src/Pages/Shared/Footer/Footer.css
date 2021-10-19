@@ -1,0 +1,29 @@
+.bg-footer{
+    background-color: rgb(2, 71, 71);
+    color: white;
+    padding: 15px;
+}
+.footer{
+    color: whitesmoke;
+    margin-top: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.footer-text{
+    border: 3px solid maroon;
+    border-radius: 50px;
+    width: 300px;
+    margin: auto;
+    padding: 10px;
+}
+
+@media only screen and (max-width:688px) {
+    .bg-footer{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (min-width:689px) and (max-width:991px) {
+    .bg-footer{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
