@@ -19,7 +19,7 @@ const Specialists = () => {
             <div className="specialist-container">
                 {
                     specialists.map(specialist => <Specialist
-                        key={specialists.id}
+                        key={specialist.id}
                         specialist={specialist}
                     ></Specialist>)
                 }

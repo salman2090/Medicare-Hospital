@@ -8,8 +8,8 @@ const Specialist = ({specialist}) => {
     return (
         <div className="specialists-container">
             <CardGroup >
-            <Card className=" specialist  m-5 mt-5 shadow p-3 mb-5 bg-body rounded ">
-            <Card.Img variant="top" src={img} />
+            <Card className=" specialist mx-5 mt-5 shadow p-3 mb-5 bg-body rounded ">
+            <Card.Img  variant="top" src={img} />
                 <Card.Body>
                    <h2>{name}</h2>
                     <br /><br />

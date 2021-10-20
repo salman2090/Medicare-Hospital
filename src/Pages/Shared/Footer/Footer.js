@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <div className="bg-footer">
             <h2 className="mt-3 footer-text">Pay Online</h2>
-            <h5 className="mt-3">Please contact our branch before making a payment nearby you.</h5>
+            <h5 className="mt-3">Please contact our branches nearby you before making a payment.</h5>
             <img className="pe-5 mt-5" src={payment} alt="" />
             <p className="footer fs-5">© 2021 MediCare Hospitals Ltd. All Right Reserved.</p>
         </div>

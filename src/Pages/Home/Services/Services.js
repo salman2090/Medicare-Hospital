@@ -19,9 +19,10 @@ const Services = () => {
             <div className="service-container">
                 {
                     services.map(service => <Service
-                        key={services.key}
+                        key={service.id}
                         service={service}
-                    ></Service>)
+                    ></Service>
+                    )
                 }
             </div>  
         </div>

@@ -6,18 +6,20 @@ import './Login.css';
 
 const Login = () => {
 
-    const {signInUsingGoogle} = useAuth();
-    
+    const {signInUsingGoogle,handlgeEmailChange,handlgePasswordChange,handleLogin, error} = useAuth();
+
+  
     return (
         <div>
+            <h2>{error}</h2>
             <h2 className="mt-5">Please Login</h2>
-            <Form>
+            <Form >
                 <Form.Group as={Row} className="login-form mb-3 w-50" controlId="formPlaintextPassword">
                     <Form.Label column sm="2">
                     Email
                     </Form.Label>
                     <Col sm="10">
-                    <Form.Control type="email" placeholder="Email" />
+                    <Form.Control onChange={handlgeEmailChange} type="email" placeholder="Email" />
                     </Col>
                 </Form.Group>
 
@@ -26,10 +28,10 @@ const Login = () => {
                     Password
                     </Form.Label>
                     <Col sm="10">
-                    <Form.Control type="password" placeholder="Password" />
+                    <Form.Control onBlur={handlgePasswordChange} type="password" placeholder="Password" />
                     </Col>
                 </Form.Group>
-                <Button className="mb-3" variant="primary outline-dark" value="submit">Submit</Button>{' '}
+                <Button className="mb-3" variant="primary outline-dark" onClick={handleLogin} value="submit">Submit</Button>{' '}
             </Form>
             <p>New to MediCare Hospital? <Link to="/register">Create Account</Link></p>
 
