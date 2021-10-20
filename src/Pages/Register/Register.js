@@ -10,7 +10,7 @@ const Register = () => {
 
     return (
         <div className="register-form">
-            <h2>{error}</h2>
+            <h2 className="mt-3 mb-3">{error}</h2>
             <h2 className="mt-5 mb-3">Create Account</h2>
             <Form >
                 <Form.Group as={Row} className="login-form mb-3 w-50" controlId="formPlaintextPassword">

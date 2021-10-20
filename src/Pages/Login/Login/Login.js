@@ -11,7 +11,7 @@ const Login = () => {
   
     return (
         <div>
-            <h2>{error}</h2>
+            <h2 className="mt-3 mb-3">{error}</h2>
             <h2 className="mt-5">Please Login</h2>
             <Form >
                 <Form.Group as={Row} className="login-form mb-3 w-50" controlId="formPlaintextPassword">
