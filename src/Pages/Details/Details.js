@@ -7,32 +7,29 @@ const Details = () => {
     const [services, setServices] = useState([]);
 
     useEffect(() => {
-        fetch('https://salman2090.github.io/jsonapi/services.json')
+        fetch('https://salman2090.github.io/jsonapi/a.json')
             .then(res => res.json())
             .then(data => setServices(data))
     },[])
     return (
-        <div>
-            <h2>This is details: {serviceId}</h2>
+        <div className="details-container">
             {services.filter(service => 
-                    service.id ===id).map(filteredService => (
+                    service.id ===id).map(selectedService => (
                     <div className="service-container m-auto">
                     <br/>
-
-                        
-                        <h2>Service Details:</h2>
-                            <div className="card">
-                                <Card>
-                                                Card border="light" className="card-body mx-3 mt-5 shadow p-3 mb-5 bg-body rounded-3" >
-                                    <Card.Img className="pt-3" variant="top" src={filteredService.img}/>
+                        <div>
+                                <Card className="mt-5 mb-5 w-100 shadow border-light rounded">
+                                    <Card.Img variant="top" src={selectedService.img} />
                                     <Card.Body>
-                                        <h3>{filteredService.name}</h3>
-                                        <p>{filteredService.description}</p>
-                                        <Link to={`/details/${id}`}><Button className="text-dark mt-3" variant="outline-info">Details</Button>{' '}</Link>
+                                    <h2 className="mb-3">{selectedService.name}</h2>
+                                    <Card.Text>
+                                        {selectedService.description}
+                                    </Card.Text>
+                                    <h5>Service Hour: {selectedService.timing}</h5>
                                     </Card.Body>
-                                </Card> 
-                                
-                            </div>           
+                                </Card>
+                             
+                        </div>           
                     </div>         
                 ))
                 }
