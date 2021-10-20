@@ -11,5 +11,5 @@
     <li>You can checkout our specialists with their speciality and degrees.</li>
     <li>We possess a range of branches located in major cities and you can find the locations in Visit Us section.</li>
     <li>Our client has to connect with us by an authentication system to check our services for to maintain the safety rules.</li>
-    <li>We have provided various online payment which you can find in our footer section.</li>
+    <li>We have provided various online payment method which you can find in our footer section.</li>
 </ul>
