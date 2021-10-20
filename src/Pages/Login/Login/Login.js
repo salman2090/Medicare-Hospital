@@ -31,7 +31,7 @@ const Login = () => {
                     <Form.Control onBlur={handlgePasswordChange} type="password" placeholder="Password" />
                     </Col>
                 </Form.Group>
-                <Button className="mb-3" variant="primary outline-dark" onClick={handleLogin} value="submit">Submit</Button>{' '}
+                <Button className="mb-3" variant="primary outline-dark" onClick={handleLogin} value="submit">Login</Button>{' '}
             </Form>
             <p>New to MediCare Hospital? <Link to="/register">Create Account</Link></p>
 

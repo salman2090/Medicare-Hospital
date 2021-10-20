@@ -6,7 +6,7 @@ import './Register.css';
 
 const Register = () => {
 
-    const {handleRegistration, handlgeEmailChange,handlgePasswordChange,signInUsingGoogle,handleName, error}=useAuth();
+    const {handleRegistration, handlgeEmailChange,handlgePasswordChange, handleName, error}=useAuth();
 
     return (
         <div className="register-form">
@@ -39,7 +39,7 @@ const Register = () => {
                     <Form.Control onBlur={handlgePasswordChange} type="password" placeholder="Password" />
                     </Col>
                 </Form.Group>
-                <Button className="mb-3" variant="primary outline-dark" onClick={handleRegistration} value="submit">Submit</Button>{' '}
+                <Button className="mb-3" variant="primary outline-dark" onClick={handleRegistration} value="submit">Register</Button>{' '}
             </Form>
             
             <p>Already Have an Account? <Link to="login">Login</Link></p>

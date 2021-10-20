@@ -7,7 +7,7 @@
 .header-text{
     border: 3px solid whitesmoke;
     align-items: center;
-    width: 280px;
+    width: 200px;
     margin: auto;
     text-align: center;
     padding: 10px;
@@ -15,7 +15,6 @@
     
 }
 .contact-container{
-    border-right: 1px solid maroon;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
